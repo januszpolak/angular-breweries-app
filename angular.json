@@ -121,8 +121,17 @@
               "devServerTarget": "breweries:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/breweries",
+            "netlifyToken": "",
+            "siteId": ""
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "breweries"
 }
